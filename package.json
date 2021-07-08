@@ -1,0 +1,25 @@
+{
+    "name": "tutorial-images-javascript",
+    "private": true,
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha ./test/example-*.js -t 300000"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/applitools/tutorial-images-javascript.git"
+    },
+    "author": "Applitools Team <team@applitools.com> (http://www.applitools.com/)",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/applitools/tutorial-images-javascript/issues"
+    },
+    "homepage": "https://github.com/applitools/tutorial-images-javascript#readme",
+    "dependencies": {
+        "@applitools/eyes-images": "^4.21.0",
+        "mocha": "^9.0.2",
+        "node-fetch": "^2.6.1"
+    }
+}
