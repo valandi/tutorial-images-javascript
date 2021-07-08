@@ -1,6 +1,6 @@
 'use strict'
 
-const {Eyes, Target, Configuration, BatchInfo} = require('@applitools/eyes-images')
+const {Eyes, Target, Configuration, BatchInfo, ConsoleLogHandler} = require('@applitools/eyes-images')
 const fetch = require('node-fetch')
 const path = require('path')
 
@@ -21,7 +21,8 @@ describe('Eyes-Images', () => {
         // obtain the API key from an environment variable and set it
         var apiKey = process.env.APPLITOOLS_API_KEY;
         eyes.setApiKey(apiKey);
-        
+        console.log(apiKey);
+
         // Set new batch
         var batchName = null;
         var batchId = process.env.APPLITOOLS_BATCH_ID;
