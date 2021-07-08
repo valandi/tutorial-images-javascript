@@ -4,6 +4,8 @@ const {Eyes, Target, Configuration, BatchInfo} = require('@applitools/eyes-image
 const fetch = require('node-fetch')
 const path = require('path')
 
+//Random comment 
+
 describe('Eyes-Images', () => {
     let eyes 
 
