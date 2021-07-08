@@ -23,6 +23,7 @@ describe('Eyes-Images', () => {
         eyes.setApiKey(apiKey);
         console.log(apiKey);
 
+        console.log("Hello world!");
         // Set new batch
         var batchName = null;
         var batchId = process.env.APPLITOOLS_BATCH_ID;
