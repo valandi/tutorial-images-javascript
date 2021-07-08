@@ -18,8 +18,14 @@ describe('Eyes-Images', () => {
         // You can get your api key from the Applitools dashboard
         // configuration.setApiKey('APPLITOOLS_API_KEY')
 
+        // obtain the API key from an environment variable and set it
+        var apiKey = process.env.APPLITOOLS_API_KEY;
+        eyes.setApiKey(apiKey);
+        
         // Set new batch
-        configuration.setBatch(new BatchInfo('Continuous Integration Batch'))
+        var batchName = null;
+        var batchId = process.env.APPLITOOLS_BATCH_ID;
+        configuration.setBatch(batchName, batchId, 0);
 
         // Set the configuration to eyes
         eyes.setConfiguration(configuration);
